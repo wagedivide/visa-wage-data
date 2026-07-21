@@ -1,0 +1,14 @@
+# Raw DOL disclosure files + derived extracts (large / regenerable)
+data/
+*.xlsx
+*.csv
+*.json
+
+# Python venv
+.venv/
+
+# Primary-source captures (copyrighted newspaper content — keep local)
+evidence/
+
+# OS
+.DS_Store

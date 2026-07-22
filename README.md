@@ -48,15 +48,15 @@ python3 -m venv .venv && ./.venv/bin/pip install openpyxl
 # download the FY24/FY25 LCA, PERM, PW, H-2B xlsx into data/ (see table above)
 
 # any employer's H-1B roles:
-./.venv/bin/python scripts/filter_employer.py "charter communications" \
+./.venv/bin/python scripts/filter_employer.py "acme corp" \
     data/out.csv data/LCA_FY2025.xlsx data/LCA_FY2024.xlsx
 
 # any employer's green-card roles + recruitment red-flag fields:
-./.venv/bin/python scripts/filter_perm.py "charter communications" \
+./.venv/bin/python scripts/filter_perm.py "acme corp" \
     data/out_perm.csv data/PERM_FY2025.xlsx data/PERM_FY2024_newform.xlsx
 
 # recover the prevailing-wage amount/level PERM omits (join PERM -> PW):
-./.venv/bin/python scripts/join_perm_pw.py "charter communications" CO \
+./.venv/bin/python scripts/join_perm_pw.py "acme corp" CO \
     --perm data/PERM_FY2025.xlsx data/PERM_FY2024_newform.xlsx \
     --pw   data/PW_FY2025.xlsx data/PW_FY2024.xlsx
 
@@ -78,7 +78,7 @@ python3 -m venv .venv && ./.venv/bin/pip install openpyxl
 | `join_perm_pw.py` | Join PERM → PW to recover prevailing-wage amount + level |
 | `zip_lookup.py` | All filings (LCA/PERM/H-2B) at a worksite ZIP |
 | `h2b_colorado.py` | H-2B seasonal analysis (template; edit the state) |
-| `correlate_gusto.py` | Match LCA roles to live job-board postings + salary bands (template) |
+| `correlate_postings.py` | Match LCA roles to live job-board postings + salary bands (template) |
 
 ## Notes / gotchas
 

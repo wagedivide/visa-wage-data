@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Correlate Gusto LCA filings (FY24-25) with current Greenhouse job postings.
+"""Correlate an employer LCA filings (FY24-25) with current Greenhouse job postings.
 
 For each LCA role, find the closest live posting by title-token overlap, then
 compare the LCA offered wage against the posting's salary band and against the
@@ -12,8 +12,8 @@ import json
 import re
 from difflib import SequenceMatcher
 
-LCA = "data/gusto.csv"
-GH = "data/gusto_greenhouse.json"
+LCA = "data/employer.csv"
+GH = "data/employer_greenhouse.json"
 
 STOP = set("the a an of and for to at in on with & , - / senior sr staff principal "
            "ii iii iv i lead".split())

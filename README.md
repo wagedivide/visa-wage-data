@@ -21,7 +21,7 @@ is routine and cost-driven rather than a scarce specialty.
 ## What's here
 
 ```
-h1b-colorado/
+visa-wage-data/
 ├── scripts/          reusable Python filters/joins over the DOL data
 ├── data/             raw DOL disclosure files + derived CSVs   (gitignored)
 ├── evidence/         primary-source captures, e.g. newspaper ads (gitignored)

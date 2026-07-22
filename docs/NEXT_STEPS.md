@@ -1,6 +1,50 @@
 # Next steps — pick up here
 
-_Last updated: 2026-07-21_
+_Last updated: 2026-07-22_
+
+## Focus decision
+
+**Lead with the tech angle.** The industry scan (below) showed the work-visa
+disclosure data has real teeth for tech (entry visas + below-median wage floor =
+clean wage-arbitrage story) and is the wrong instrument for the other industries.
+Charter is the flagship. Everything else is context or later.
+
+## Industry scan — where the visa data has teeth (and where it doesn't)
+
+Explored several Colorado industries to test the "economics of work visas" beyond
+tech. Key learning: **the DOL disclosure data only sees the visa-sponsored slice,
+which differs wildly by industry.**
+
+- **Tech (H-1B/PERM)** — the data is the *right* tool. Entry visas + below-median
+  wage floor = wage arbitrage on skilled labor. **Charter** is the exemplar,
+  **Ibotta** the clean counter-example. This is the publishable core.
+- **Resort / seasonal (H-2B, FY2025)** — ~10,200 CO positions, but **58% is
+  landscaping**, not restaurants; hospitality (housekeeping/cooks) is the rest.
+  Resort median ~$20/hr, 72/113 resort employers provide housing. This is a
+  genuine *labor-shortage + housing* story, NOT wage arbitrage — opposite
+  sympathies from tech. The iconic "ski bum" front-of-house jobs (lift op,
+  instructor) barely appear; the real ski-bum competitor is **J-1** (State Dept,
+  not in DOL data). `scripts/h2b_colorado.py`.
+- **Restaurants** — mostly PERM green-card cooks/chefs (EB-3) + a resort-town
+  crew-member cluster (JMJK/PNJJ/JJ-N-J LLCs, Gunnison, $30,940). Different genre
+  (immigration pathway, not corporate arbitrage). Don't force the Charter frame.
+- **Household / domestic** — ~2% of CO PERM filings are families sponsoring
+  nannies/caregivers ($30-45k, median ~$38k, prevailing wage for childcare).
+  Sympathetic, small, individual filers — **do not name private people.** Same
+  Denver-Post / local-paper recruitment mechanism as Charter, at household scale.
+- **Meatpacking (JBS/Swift Greeley, Cargill, Leprino, Pilgrim's)** — 41 filings,
+  **100% white-collar** (IT/SAP/engineers/scientists, $53-178k). ZERO plant-floor
+  production workers. The floor workforce (refugees, asylees, LPRs, undocumented)
+  is **invisible in visa data.** Meatpacking is the strongest CO wage-suppression
+  story BUT needs different evidence (BLS wage trends, the 2006 Swift "Operation
+  Wagon Train" ICE raid + 2025-26 ICE-presence/strike history, UFCW, refugee
+  workforce data) — not this pipeline. `scripts/zip_lookup.py` reusable per-ZIP.
+
+**Analytical through-line refined across the conversation:** wage suppression bites
+hardest where a visa (a) *adds/permanentizes* labor supply AND (b) pays *below the
+local median*. That's tech H-1B. PERM green cards mostly *permanentize* already-
+present (often precarious-status, e.g. TPS/asylum) workers — a real but smaller,
+harder-to-quantify lever, best evidenced in meatpacking/ag, not nails.
 
 ## Where we are
 

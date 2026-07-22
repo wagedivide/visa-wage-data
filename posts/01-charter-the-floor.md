@@ -150,7 +150,7 @@ The data says, for Charter in Colorado, it's the second one.
 disclosure data (H-1B/LCA, PERM, and prevailing-wage files), Charter's own SEC
 filings and earnings, and the Denver Post archive. The full methodology, the
 scripts, and the reproducible pipeline are here:
-**github.com/reagent/h1b-colorado**. Re-run it, check my math, or point it at your
+**github.com/wagedivide/h1b-colorado**. Re-run it, check my math, or point it at your
 own employer.
 
 *This is the first in a series analyzing how Colorado employers use the H-1B and
